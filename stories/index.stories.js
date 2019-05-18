@@ -2,12 +2,15 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { Button, PrimaryButton } from '../packages/button'
+import { Button, PrimaryButton, SecondaryButton } from '../packages/button';
 
 storiesOf('Button', module)
   .add('Regular Button', () => (
-    <Button text="Button" />
+    <Button text="Click !!" />
   ))
   .add('Primary Button', () => (
-    <PrimaryButton text="Primary"/>
+    <PrimaryButton text="Click" />
+  ))
+  .add('Secondary Button', () => (
+    <SecondaryButton text="Click !!" />
   ))
